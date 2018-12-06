@@ -19,6 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <spirng.cloud.version>Finchley.SR2</spirng.cloud.version>
         <mybatis.spring.boot.version>1.3.2</mybatis.spring.boot.version>
         <mysql.version>5.1.6</mysql.version>
         <pretty.cat.version>0.0.1-SNAPSHOT</pretty.cat.version>
@@ -30,7 +31,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.SR2</version>
+                <version>${spirng.cloud.version}</version>
             </dependency>
 
             <dependency>
@@ -85,5 +86,6 @@
         <module>pretty-cat-product</module>
         <module>pretty-cat-scheduler</module>
         <module>pretty-cat-redis</module>
+        <module>pretty-cat-eureka</module>
     </modules>
 </project>
