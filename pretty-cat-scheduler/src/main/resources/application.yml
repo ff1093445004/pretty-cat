@@ -1,0 +1,7 @@
+server:
+  port: 8083
+
+logging:
+  config:
+    classpath: log/logback-spring.xml
+  path: C:\Users\zhm\Desktop\log

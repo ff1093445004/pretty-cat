@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.pretty.cat</groupId>
+    <artifactId>pretty-cat</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.0.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <mybatis.spring.boot.version>1.3.2</mybatis.spring.boot.version>
+        <mysql.version>5.1.6</mysql.version>
+        <pretty.cat.version>0.0.1-SNAPSHOT</pretty.cat.version>
+        <guava.version>19.0</guava.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Finchley.SR2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.pretty.cat</groupId>
+                <artifactId>pretty-cat-domain</artifactId>
+                <version>${pretty.cat.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.pretty.cat</groupId>
+                <artifactId>pretty-cat-es</artifactId>
+                <version>${pretty.cat.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.pretty.cat</groupId>
+                <artifactId>pretty-cat-product</artifactId>
+                <version>${pretty.cat.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.pretty.cat</groupId>
+                <artifactId>pretty-cat-scheduler</artifactId>
+                <version>${pretty.cat.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.spring.boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>pretty-cat-domain</module>
+        <module>pretty-cat-es</module>
+        <module>pretty-cat-product</module>
+        <module>pretty-cat-scheduler</module>
+        <module>pretty-cat-redis</module>
+    </modules>
+</project>
