@@ -1,4 +1,4 @@
-package com.pretty.cat.prettycatdomain.domain;
+package com.pretty.cat.prettycatapi.model;
 
 import java.io.Serializable;
 import java.util.List;

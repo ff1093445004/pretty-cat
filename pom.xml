@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.pretty.cat</groupId>
     <artifactId>pretty-cat</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -32,11 +31,13 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spirng.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <dependency>
                 <groupId>com.pretty.cat</groupId>
-                <artifactId>pretty-cat-domain</artifactId>
+                <artifactId>pretty-cat-api</artifactId>
                 <version>${pretty.cat.version}</version>
             </dependency>
 
@@ -68,7 +69,7 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
-                <scope>runtime</scope>
+                <!--<scope>runtime</scope>-->
             </dependency>
 
             <dependency>
@@ -81,7 +82,7 @@
     </dependencyManagement>
 
     <modules>
-        <module>pretty-cat-domain</module>
+        <module>pretty-cat-api</module>
         <module>pretty-cat-es</module>
         <module>pretty-cat-product</module>
         <module>pretty-cat-scheduler</module>

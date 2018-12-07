@@ -1,6 +1,6 @@
 package com.pretty.cat.prettycates.repository;
 
-import com.pretty.cat.prettycatdomain.domain.Product;
+import com.pretty.cat.prettycatapi.model.Product;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.stereotype.Component;
 

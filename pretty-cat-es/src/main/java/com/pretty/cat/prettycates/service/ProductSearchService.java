@@ -5,8 +5,8 @@ import java.util.Map;
 
 import com.google.common.collect.Lists;
 import com.google.gson.Gson;
-import com.pretty.cat.prettycatdomain.domain.BaseResult;
-import com.pretty.cat.prettycatdomain.domain.Product;
+import com.pretty.cat.prettycatapi.model.BaseResult;
+import com.pretty.cat.prettycatapi.model.Product;
 import com.pretty.cat.prettycates.repository.ProductRepository;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.transport.TransportClient;

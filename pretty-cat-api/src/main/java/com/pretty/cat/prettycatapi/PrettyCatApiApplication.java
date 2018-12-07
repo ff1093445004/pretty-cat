@@ -1,12 +1,12 @@
-package com.pretty.cat.prettycatdomain;
+package com.pretty.cat.prettycatapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PrettyCatDomainApplication {
+public class PrettyCatApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PrettyCatDomainApplication.class, args);
+		SpringApplication.run(PrettyCatApiApplication.class, args);
 	}
 }

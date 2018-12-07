@@ -10,7 +10,7 @@ public class ProductScheduler {
 
 	private static Logger LOGGER = LoggerFactory.getLogger(ProductScheduler.class);
 
-	@Scheduled(cron = "0/30 * * * * *")
+//	@Scheduled(cron = "0/30 * * * * *")
 	public void sycProduct() {
 		LOGGER.info("==============job start!!!!!!!!!!!==============");
 		LOGGER.info("============================");

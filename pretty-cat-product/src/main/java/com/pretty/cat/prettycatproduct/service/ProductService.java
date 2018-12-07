@@ -1,7 +1,7 @@
 package com.pretty.cat.prettycatproduct.service;
 
-import com.pretty.cat.prettycatdomain.domain.BaseRequest;
-import com.pretty.cat.prettycatdomain.domain.BaseResult;
+import com.pretty.cat.prettycatapi.model.BaseRequest;
+import com.pretty.cat.prettycatapi.model.BaseResult;
 import org.springframework.stereotype.Service;
 
 @Service
