@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class PrettyCatEsApplicationTests {
 
-	@Value("${jdbc.url}")
+	@Value("${zhm.num}")
 	private String value;
 	
 	@Test
