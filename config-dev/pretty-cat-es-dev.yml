@@ -13,5 +13,8 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://127.0.0.1:8180/eureka/
+management:
+  security:
+    enabled: false
 zhm:
   num: 123
