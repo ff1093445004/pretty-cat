@@ -1,0 +1,15 @@
+server:
+  port: 8280
+spring:
+  application:
+    name: pretty-cat-es
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      clusterNodes: 127.0.0.1:9300
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8180/eureka/
