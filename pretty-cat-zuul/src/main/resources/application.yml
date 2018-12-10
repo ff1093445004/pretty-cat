@@ -1,0 +1,18 @@
+server:
+  port: 8780
+spring:
+  application:
+    name: pretty-cat-zuul
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8180/eureka/
+zuul:
+  routes: 
+    product-service:
+      path: /product-service/**
+      serviceId: pretty-cat-product
+  host:
+    connect-timeout-millis: 5000

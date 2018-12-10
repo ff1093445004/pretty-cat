@@ -10,7 +10,7 @@ import com.pretty.cat.prettycatapi.model.BaseResult;
 @RestController
 public interface ProductFeignClient {
 
-	@RequestMapping(value = "/product/findByName", method = RequestMethod.GET)
+	@RequestMapping(value = "/findByName", method = RequestMethod.GET)
 	BaseResult findByName(@RequestParam("page") int page, @RequestParam("size") int size,
 			@RequestParam("name") String name);
 }

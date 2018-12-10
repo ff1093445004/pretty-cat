@@ -4,7 +4,7 @@ spring:
   application:
     name: pretty-cat-product
   datasource:
-    url: jdbc:mysql://localhost:3306/pretty_cat
+    url: jdbc:mysql://localhost:3306/pretty_cat?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
     password:
     driver-class-name: com.mysql.jdbc.Driver
