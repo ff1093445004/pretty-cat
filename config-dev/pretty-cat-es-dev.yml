@@ -14,4 +14,4 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:8180/eureka/
 zhm:
-  num: 123
+  num: 12345
