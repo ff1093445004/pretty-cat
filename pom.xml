@@ -88,5 +88,7 @@
         <module>pretty-cat-scheduler</module>
         <module>pretty-cat-redis</module>
         <module>pretty-cat-eureka</module>
+        <module>pretty-cat-zuul</module>
+        <module>pretty-cat-config</module>
     </modules>
 </project>
