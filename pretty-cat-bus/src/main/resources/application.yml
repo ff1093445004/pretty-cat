@@ -1,0 +1,16 @@
+server:
+  port: 8980
+spring:
+  application:
+    name: pretty-cat-bus
+  rabbitmq: #RabbitMQÏà¹ØµÄÅäÖÃ
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8180/eureka/

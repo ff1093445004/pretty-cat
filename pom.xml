@@ -90,5 +90,6 @@
         <module>pretty-cat-eureka</module>
         <module>pretty-cat-zuul</module>
         <module>pretty-cat-config</module>
+        <module>pretty-cat-bus</module>
     </modules>
 </project>
