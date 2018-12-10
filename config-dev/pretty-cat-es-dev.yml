@@ -5,7 +5,7 @@ spring:
     name: pretty-cat-es
   data:
     elasticsearch:
-      cluster-name: elasticsearch1
+      cluster-name: elasticsearch
       clusterNodes: 127.0.0.1:9300
 eureka:
   client:
@@ -13,3 +13,8 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://127.0.0.1:8180/eureka/
+management:
+  security:
+    enabled: false #是否开启actuator安全认证
+jdbc:
+  url: 123

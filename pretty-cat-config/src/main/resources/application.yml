@@ -10,4 +10,4 @@ spring:
           uri: https://github.com/ff1093445004/pretty-cat.git
           username: ff1093445004
           password: ff19871218
-          search-paths: config
+          search-paths: config-dev
