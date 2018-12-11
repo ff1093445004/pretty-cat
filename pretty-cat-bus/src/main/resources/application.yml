@@ -3,7 +3,7 @@ server:
 spring:
   application:
     name: pretty-cat-bus
-  rabbitmq: #RabbitMQÏà¹ØµÄÅäÖÃ
+  rabbitmq:
     host: 127.0.0.1
     port: 5672
     username: guest

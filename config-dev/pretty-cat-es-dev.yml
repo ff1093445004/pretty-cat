@@ -17,6 +17,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: *
+        include: bus-refresh
 zhm:
   num: 123

@@ -11,4 +11,3 @@ spring:
           username: ff1093445004
           password: ff19871218
           search-paths: config-dev
-          
