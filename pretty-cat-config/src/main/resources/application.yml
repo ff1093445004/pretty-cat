@@ -11,3 +11,9 @@ spring:
           username: ff1093445004
           password: ff19871218
           search-paths: config-dev
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8180/eureka/

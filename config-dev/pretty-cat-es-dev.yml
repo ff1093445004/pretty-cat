@@ -19,4 +19,4 @@ management:
       exposure:
         include: '*'
 zhm:
-  num: 123
+  num: zhm
