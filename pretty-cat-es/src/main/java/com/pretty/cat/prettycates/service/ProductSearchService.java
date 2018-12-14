@@ -67,7 +67,7 @@ public class ProductSearchService {
 		}
 		// 设置高亮,使用默认的highlighter高亮器
 		HighlightBuilder highlightBuilder = new HighlightBuilder().field("name")
-				.preTags("<span style=\"color:red;font-weight:bold;\">").postTags("</span>");
+				.preTags("<span style=\"color:green;font-weight:bold;\">").postTags("</span>");
 		// 设置查询字段 设置一次返回的文档数量
 		SearchResponse response = transportClient.prepareSearch("product_index").setTypes("product")
 				.setQuery(matchQuery).highlighter(highlightBuilder).setFrom((page - 1) * size).setSize(size).get();

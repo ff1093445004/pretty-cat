@@ -1,0 +1,19 @@
+server:
+  port: 8990
+spring:
+  application:
+    name: pretty-cat-mysql
+  datasource:
+    url: jdbc:mysql://localhost:3306/pretty_cat?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8180/eureka/
+mybatis:
+  mapper-locations: classpath:mapping/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.pretty.cat.prettycatapi.model  # 注意：对应实体类的路径

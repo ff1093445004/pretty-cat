@@ -17,3 +17,10 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://127.0.0.1:8180/eureka/
+  instance:
+    prefer-ip-address: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -11,8 +11,8 @@ eureka:
       defaultZone: http://127.0.0.1:8180/eureka/
 zuul:
   routes: 
-    product-service:
-      path: /product-service/**
+    product:
+      path: /product/**
       serviceId: pretty-cat-product
   host:
     connect-timeout-millis: 5000
